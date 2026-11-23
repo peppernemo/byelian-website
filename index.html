@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ELIAN | Fragrance for a more beautiful way to be</title>
+<meta name="description" content="Elian is a fragrance house in development in New York. Leave your email to hear when the first fragrances arrive.">
+<meta property="og:title" content="ELIAN">
+<meta property="og:description" content="Fragrance for a more beautiful way to be.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.byelian.com/">
+<meta name="theme-color" content="#F6F1E7">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%23F6F1E7'/%3E%3Ctext x='32' y='46' font-family='Georgia,serif' font-size='40' text-anchor='middle' fill='%232A211B'%3EE%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=Marcellus&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --paper: #F6F1E7;
+    --stone: #E7DECC;
+    --ink: #2A211B;
+    --muted: #6E6257;
+    --bronze: #8A6B42;
+  }
+  * { box-sizing: border-box; }
+  html, body { height: 100%; }
+  body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: "EB Garamond", Georgia, "Times New Roman", serif;
+    font-size: 19px;
+    line-height: 1.55;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    -webkit-font-smoothing: antialiased;
+  }
+  main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 72px 24px 48px;
+  }
+  h1 {
+    font-family: "Marcellus", Georgia, serif;
+    font-weight: 400;
+    font-size: clamp(44px, 9vw, 84px);
+    letter-spacing: 0.34em;
+    margin: 0 -0.34em 0 0; /* offset trailing letter-spacing so the word sits centred */
+    line-height: 1.1;
+  }
+  .rule {
+    width: 56px;
+    height: 1px;
+    background: var(--bronze);
+    margin: 30px auto 26px;
+  }
+  .tagline {
+    font-style: italic;
+    font-size: clamp(21px, 3.2vw, 26px);
+    margin: 0;
+  }
+  .lede {
+    max-width: 30em;
+    margin: 34px auto 0;
+    color: var(--muted);
+  }
+  form {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 30px auto 0;
+    width: 100%;
+    max-width: 460px;
+  }
+  label.sr {
+    position: absolute; width: 1px; height: 1px; overflow: hidden;
+    clip: rect(0 0 0 0); white-space: nowrap;
+  }
+  input[type="email"] {
+    flex: 1 1 240px;
+    min-width: 0;
+    font: inherit;
+    color: var(--ink);
+    background: #FFFDF8;
+    border: 1px solid #CFC3AE;
+    border-radius: 2px;
+    padding: 12px 14px;
+  }
+  input[type="email"]::placeholder { color: #9A8F82; }
+  button {
+    font-family: "Marcellus", Georgia, serif;
+    font-size: 14px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--paper);
+    background: var(--ink);
+    border: 1px solid var(--ink);
+    border-radius: 2px;
+    padding: 13px 22px;
+    cursor: pointer;
+    transition: background .2s ease, border-color .2s ease;
+  }
+  button:hover { background: var(--bronze); border-color: var(--bronze); }
+  input:focus-visible, button:focus-visible, a:focus-visible {
+    outline: 2px solid var(--bronze);
+    outline-offset: 3px;
+  }
+  .note {
+    font-size: 15px;
+    color: var(--muted);
+    margin: 14px 0 0;
+    min-height: 1.6em;
+  }
+  .note.ok { color: var(--ink); }
+  footer {
+    border-top: 1px solid var(--stone);
+    padding: 22px 24px 28px;
+    text-align: center;
+    font-size: 15px;
+    color: var(--muted);
+  }
+  footer p { margin: 2px 0; }
+  a { color: inherit; text-decoration-color: var(--bronze); text-underline-offset: 3px; }
+  a:hover { color: var(--bronze); }
+  @media (prefers-reduced-motion: reduce) { button { transition: none; } }
+</style>
+</head>
+<body>
+
+<main>
+  <h1>ELIAN</h1>
+  <div class="rule" aria-hidden="true"></div>
+  <p class="tagline">Fragrance for a more beautiful way to be.</p>
+
+  <p class="lede">Our first fragrances are in development in New York. Leave your email and we will write when they arrive.</p>
+
+  <form id="signup" novalidate>
+    <label class="sr" for="email">Email address</label>
+    <input id="email" name="email" type="email" placeholder="Your email" autocomplete="email" required>
+    <button type="submit">Notify me</button>
+  </form>
+  <p class="note" id="note" role="status">We will only write about Elian. Unsubscribe at any time.</p>
+</main>
+
+<footer>
+  <p><a href="mailto:hello@byelian.com">hello@byelian.com</a></p>
+  <p>&copy; 2026 Elian Collection LLC &middot; 447 Broadway, New York, NY 10013</p>
+</footer>
+
+<script>
+  // SIGNUP_ENDPOINT: paste the form address from your email-list service here
+  // (for example a Formspree form URL). While it is empty, the button opens
+  // the visitor's own email app with a ready-made message to hello@byelian.com.
+  const SIGNUP_ENDPOINT = "";
+  const CONTACT = "hello@byelian.com";
+
+  const form = document.getElementById("signup");
+  const input = document.getElementById("email");
+  const note = document.getElementById("note");
+
+  form.addEventListener("submit", async (e) => {
+    e.preventDefault();
+    const email = input.value.trim();
+    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+      note.className = "note";
+      note.textContent = "Please enter a valid email address.";
+      input.focus();
+      return;
+    }
+    if (!SIGNUP_ENDPOINT) {
+      const subject = encodeURIComponent("Please add me to the Elian list");
+      const body = encodeURIComponent("Please let me know when Elian launches.\n\n" + email);
+      window.location.href = "mailto:" + CONTACT + "?subject=" + subject + "&body=" + body;
+      note.className = "note ok";
+      note.textContent = "Your email app should open. Press send and you are on the list.";
+      return;
+    }
+    try {
+      const res = await fetch(SIGNUP_ENDPOINT, {
+        method: "POST",
+        headers: { "Accept": "application/json" },
+        body: new FormData(form),
+      });
+      if (!res.ok) throw new Error("bad response");
+      form.reset();
+      note.className = "note ok";
+      note.textContent = "Thank you. We will write when the first fragrances arrive.";
+    } catch (err) {
+      note.className = "note";
+      note.textContent = "Something went wrong. Please email " + CONTACT + " instead.";
+    }
+  });
+</script>
+</body>
+</html>
